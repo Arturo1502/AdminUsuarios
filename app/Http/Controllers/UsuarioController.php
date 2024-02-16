@@ -42,9 +42,10 @@ class UsuarioController extends Controller
      */
     public function update(Request $request, Usuario $usuario)
     {
-        $usuario->name = $request->name;
-        $usuario->lastname = $request->lastname;
-
+        $usuario->nombre = $request->nombre;
+        $usuario->apellido = $request->apellido;
+        $usuario->correo = $request->correo;
+        $usuario->fechaDeRegistro = $request->fechaDeRegistro;
         $usuario->save();
 
         return $usuario;

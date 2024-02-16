@@ -23,6 +23,6 @@ Route::get('/', [UsuarioController::class, 'index']);
 
 Route::get('/{usuario}', [UsuarioController::class, 'show']); // mostrar un usuario especifico
 Route::post('/store', [UsuarioController::class, 'store']); //es para crear un nuevo registro
-Route::put('usuario/{usuario}', [UsuarioController::class, 'update']); //para actualizas unformacion de un registro especifico
+Route::put('/usuario/{usuario}', [UsuarioController::class, 'update']); //para actualizas unformacion de un registro especifico
 
 Route::delete('usuario/{usuario}', [UsuarioController::class, 'destroy']); //para eliminar un registro especifico;
